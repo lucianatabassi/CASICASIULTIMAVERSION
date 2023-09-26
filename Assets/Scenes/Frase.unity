@@ -305,12 +305,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 907593108}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4ed6b1ddc6019f04da5432af0931af6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NombreEscena: 
+  NombreEscena: SampleScene
 --- !u!114 &907593111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -459,7 +459,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1468739944}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: da12fd901d5b67c4dbf42cd08dae5d40, type: 3}
   m_Name: 
