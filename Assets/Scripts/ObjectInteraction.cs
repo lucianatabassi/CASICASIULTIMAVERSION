@@ -73,7 +73,7 @@ public class ObjectInteraction : MonoBehaviour
 
         // Verificar si el objeto se entrega en el destino
         float distanceToDestination = Vector3.Distance(carriedObject.transform.position, destinationObject.transform.position);
-        if (distanceToDestination < 5.0f) // Ajusta el valor de distancia según tus necesidades
+        if (distanceToDestination < 8.0f) // Ajusta el valor de distancia según tus necesidades
         {
             // Desactiva la física y coloca el objeto en el destino
             carriedObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
