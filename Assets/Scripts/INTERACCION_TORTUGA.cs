@@ -24,12 +24,12 @@ public class INTERACCION_TORTUGA : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonDown(0)) //DESCOMENTAR PARA PC
-        //if  (Input.GetKey("joystick button 1")) //DESCOMENTAR PARA APK
+        //if (Input.GetKey("joystick button 1")) //DESCOMENTAR PARA APK
         {
             if (!isCarrying)
             {
                 RaycastHit hit;
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
 
                 if (Physics.Raycast(ray, out hit))
                 {

@@ -24,12 +24,12 @@ public class ObjectInteraction : MonoBehaviour
     void Update()
     {
         if (Input.GetMouseButtonDown(0)) //DESCOMENTAR PARA PC
-        //if  (Input.GetKey("joystick button 1")) //DESCOMENTAR PARA APK
+        //if (Input.GetKey("joystick button 1")) //DESCOMENTAR PARA APK
         {
             if (!isCarrying)
             {
                 RaycastHit hit;
-                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
 
                 if (Physics.Raycast(ray, out hit))
                 {
@@ -73,7 +73,7 @@ public class ObjectInteraction : MonoBehaviour
 
         // Verificar si el objeto se entrega en el destino
         float distanceToDestination = Vector3.Distance(carriedObject.transform.position, destinationObject.transform.position);
-        if (distanceToDestination < 8.0f) // Ajusta el valor de distancia según tus necesidades
+        if (distanceToDestination < 3f) // Ajusta el valor de distancia según tus necesidades
         {
             // Desactiva la física y coloca el objeto en el destino
             carriedObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
